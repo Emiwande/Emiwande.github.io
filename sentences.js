@@ -63,6 +63,27 @@ const sentences = [
     source: ""
   },
   {
+    text: "It rained all day, which ruined our plans.",
+    correct: true,
+    tags: [],
+    categories: [],
+    source: ""
+  },
+  {
+    text: "The teacher demanded that we be quiet.",
+    correct: true,
+    tags: [],
+    categories: ["American", "formal"],
+    source: ""
+  },
+  {
+    text: "It rained all day, what ruined our plans.",
+    correct: false,
+    tags: [],
+    categories: ["relative clauses"],
+    source: ""
+  },
+  {
     text: "I sneezed my nose.",
     correct: false,
     tags: [],
@@ -73,6 +94,34 @@ const sentences = [
     text: "I sneezed.",
     correct: true,
     tags: [],
+    categories: [],
+    source: ""
+  },
+  {
+    text: "I sneezed.",
+    correct: true,
+    tags: [],
+    categories: [],
+    source: ""
+  },
+  {
+    text: "We hike in the weekends.",
+    correct: false,
+    tags: [],
+    categories: ["prepositons"],
+    source: ""
+  },
+  {
+    text: "We hike at the weekends.",
+    correct: true,
+    tags: ["British"],
+    categories: [],
+    source: ""
+  },
+  {
+    text: "We hike on the weekends.",
+    correct: true,
+    tags: ["American"],
     categories: [],
     source: ""
   },
