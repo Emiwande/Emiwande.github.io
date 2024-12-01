@@ -106,7 +106,7 @@ const sentences = [
   },
   {
     text: "I'd rather eat out.",
-    correct: false,
+    correct: true,
     tags: [],
     categories: [],
     source: ""
@@ -121,8 +121,8 @@ const sentences = [
   {
     text: "I am next, am I not?",
     correct: true,
-    tags: [],
-    categories: ["formal"],
+    tags: ["formal"],
+    categories: [],
     source: ""
   },
   {
