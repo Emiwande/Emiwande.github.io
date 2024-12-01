@@ -1,20 +1,13 @@
 const sentences = [
   {
-    text: "Can you speak English?",
+    text: "Neither of the books is interesting.",
     correct: true,
-    tags: [],
+    tags: ["formal"],
     categories: [],
     source: ""
   },
   {
-    text: "Do you can speak English?",
-    correct: false,
-    tags: [],
-    categories: ["modals"],
-    source: ""
-  },
-  {
-    text: "They could escape from prison yesterday.",
+    text: "Do you can juggle?",
     correct: false,
     tags: [],
     categories: ["modals"],
@@ -38,13 +31,6 @@ const sentences = [
     text: "It was a mere suggestion.",
     correct: true,
     tags: [],
-    categories: [],
-    source: ""
-  },
-  {
-    text: "Neither of the books is interesting.",
-    correct: true,
-    tags: ["formal"],
     categories: [],
     source: ""
   },
@@ -91,10 +77,24 @@ const sentences = [
     source: ""
   },
   {
+    text: "Can you juggle?",
+    correct: true,
+    tags: [],
+    categories: [],
+    source: ""
+  },
+  {
     text: "I sneezed my nose.",
     correct: false,
     tags: [],
     categories: ["verbs"],
+    source: ""
+  },
+  {
+    text: "They could escape from prison yesterday.",
+    correct: false,
+    tags: [],
+    categories: ["modals"],
     source: ""
   },
   {
