@@ -14,6 +14,13 @@ const sentences = [
     source: ""
   },
   {
+    text: "My world has always been cold, dark, silent.",
+    correct: true,
+    tags: ["literary"],
+    categories: [],
+    source: ""
+  },
+  {
     text: "Was late.",
     correct: false,
     tags: [],
