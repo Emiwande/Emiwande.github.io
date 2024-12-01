@@ -7,6 +7,34 @@ const sentences = [
     source: ""
   },
   {
+    text: "Whether I'll go to the part I don't know.",
+    correct: true,
+    tags: [],
+    categories: [],
+    source: ""
+  },
+  {
+    text: "If I'll go to the part I don't know.",
+    correct: false,
+    tags: [],
+    categories: [],
+    source: ""
+  },
+  {
+    text: "We had a conversation about whether the project was feasible.",
+    correct: true,
+    tags: [],
+    categories: [],
+    source: ""
+  },
+  {
+    text: "We had a conversation about if the project was feasible.",
+    correct: false,
+    tags: [],
+    categories: [],
+    source: ""
+  },
+  {
     text: "Do you can juggle?",
     correct: false,
     tags: [],
