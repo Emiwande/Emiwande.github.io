@@ -98,13 +98,6 @@ const sentences = [
     source: ""
   },
   {
-    text: "I sneezed.",
-    correct: true,
-    tags: [],
-    categories: [],
-    source: ""
-  },
-  {
     text: "We hike in the weekends.",
     correct: false,
     tags: [],
