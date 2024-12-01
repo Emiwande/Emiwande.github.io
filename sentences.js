@@ -98,6 +98,62 @@ const sentences = [
     source: ""
   },
   {
+    text: "I don't need no help.",
+    correct: false,
+    tags: [],
+    categories: [],
+    source: ""
+  },
+  {
+    text: "I don't need any help.",
+    correct: true,
+    tags: [],
+    categories: [],
+    source: ""
+  },
+  {
+    text: "I don't need some help.",
+    correct: false,
+    tags: [],
+    categories: [],
+    source: ""
+  },
+  {
+    text: "I need no help.",
+    correct: true,
+    tags: [],
+    categories: [],
+    source: ""
+  },
+  {
+    text: "Did you went to the party?",
+    correct: false,
+    tags: [],
+    categories: ["tenses"],
+    source: ""
+  },
+  {
+    text: "Did you go to the party?",
+    correct: true,
+    tags: [],
+    categories: [],
+    source: ""
+  },
+  {
+    text: "My parents let me to stay up late",
+    correct: false,
+    tags: [],
+    categories: ["verbs"],
+    source: ""
+  },
+  {
+    text: "My parents let me stay up late",
+    correct: true,
+    tags: [],
+    categories: ["verbs"],
+    source: ""
+  },
+  {
     text: "We hike in the weekends.",
     correct: false,
     tags: [],
