@@ -378,20 +378,6 @@ const sentences = [
     source: ""
   },
   {
-    text: "Look at her dancing.",
-    correct: true,
-    tags: [],
-    categories: [],
-    source: ""
-  },
-  {
-    text: "Look at her dance.",
-    correct: true,
-    tags: ["American"],
-    categories: ["verbs"],
-    source: ""
-  },
-  {
     text: "I don't hope so.",
     correct: false,
     tags: [],
