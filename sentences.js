@@ -14,6 +14,20 @@ const sentences = [
     source: ""
   },
   {
+    text: "I visited the Pentagon.",
+    correct: true,
+    tags: [],
+    categories: [],
+    source: ""
+  },
+  {
+    text: "I visited Pentagon.",
+    correct: false,
+    tags: [],
+    categories: ["articles"],
+    source: ""
+  },
+  {
     text: "My world has always been cold, dark, silent.",
     correct: true,
     tags: ["literary"],
@@ -45,6 +59,34 @@ const sentences = [
     text: "Neither of the books are interesting.",
     correct: true,
     tags: ["informal"],
+    categories: [],
+    source: ""
+  },
+  {
+    text: "It's time to make a decision",
+    correct: true,
+    tags: [],
+    categories: [],
+    source: ""
+  },
+  {
+    text: "It's time for you to make a decision",
+    correct: true,
+    tags: [],
+    categories: [],
+    source: ""
+  },
+  {
+    text: "It's time you made a decision.",
+    correct: true,
+    tags: [],
+    categories: [],
+    source: ""
+  },
+  {
+    text: "It's time you make a decision.",
+    correct: false,
+    tags: [],
     categories: [],
     source: ""
   },
