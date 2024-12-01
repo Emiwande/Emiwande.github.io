@@ -3,21 +3,21 @@ const sentences = [
     text: "Can you speak English?",
     correct: true,
     tags: [],
-    categories: ["modals"],
+    categories: [],
     source: ""
   },
   {
     text: "Do you can speak English?",
     correct: false,
     tags: [],
-    categories: [],
+    categories: ["modals"],
     source: ""
   },
   {
     text: "Was late.",
     correct: false,
     tags: [],
-    categories: [],
+    categories: ["clause"],
     source: ""
   },
   {
@@ -31,13 +31,20 @@ const sentences = [
     text: "It was a mere suggestion.",
     correct: true,
     tags: [],
-    categories: ["adjectives"],
+    categories: [],
     source: ""
   },
   {
-    text: "That suggestion was mere.",
-    correct: false,
-    tags: [],
+    text: "Neither of the books is interesting.",
+    correct: true,
+    tags: ["formal"],
+    categories: [],
+    source: ""
+  },
+  {
+    text: "Neither of the books are interesting.",
+    correct: true,
+    tags: ["informal"],
     categories: [],
     source: ""
   },
@@ -45,21 +52,21 @@ const sentences = [
     text: "He's knowing the answer.",
     correct: false,
     tags: [],
-    categories: [],
+    categories: ["tenses"],
     source: ""
   },
   {
     text: "He knows the answer.",
     correct: true,
     tags: [],
-    categories: ["tenses"],
+    categories: [],
     source: ""
   },
   {
     text: "I sneezed my nose.",
     correct: false,
     tags: [],
-    categories: [],
+    categories: ["verbs"],
     source: ""
   },
   {
@@ -87,7 +94,7 @@ const sentences = [
     text: "I doubt.",
     correct: false,
     tags: [],
-    categories: [],
+    categories: ["verbs"],
     source: ""
   },
   {
@@ -101,7 +108,7 @@ const sentences = [
     text: "I'd rather to eat out.",
     correct: false,
     tags: [],
-    categories: [],
+    categories: ["verbs"],
     source: ""
   },
   {
@@ -119,6 +126,20 @@ const sentences = [
     source: ""
   },
   {
+    text: "None of the answers is correct.",
+    correct: true,
+    tags: ["formal"],
+    categories: [],
+    source: ""
+  },
+  {
+    text: "None of the answers are correct.",
+    correct: true,
+    tags: ["informal"],
+    categories: [],
+    source: ""
+  },
+  {
     text: "I am next, am I not?",
     correct: true,
     tags: ["formal"],
@@ -129,84 +150,126 @@ const sentences = [
     text: "I've lost my wallet yesterday.",
     correct: false,
     tags: [],
-    categories: [],
+    categories: ["tenses"],
     source: ""
   },
   {
     text: "I lost my wallet yesterday.",
     correct: true,
     tags: [],
-    categories: ["tenses"],
+    categories: [],
     source: ""
   },
   {
     text: "I took an umbrella in case it will rain.",
     correct: false,
     tags: [],
-    categories: [],
+    categories: ["tenses"],
     source: ""
   },
   {
     text: "I took an umbrella in case it rains.",
     correct: true,
     tags: [],
-    categories: ["tenses"],
+    categories: [],
     source: ""
   },
   {
     text: "I believe that they are the most qualified candidates.",
     correct: true,
     tags: [],
-    categories: ["verbs"],
+    categories: [],
     source: ""
   },
   {
     text: "I believe they are the most qualified candidates.",
     correct: true,
     tags: [],
-    categories: ["verbs"],
+    categories: [],
+    source: ""
+  },
+  {
+    text: "'I love you,' whispered Kate.",
+    correct: true,
+    tags: [],
+    categories: [],
+    source: ""
+  },
+  {
+    text: "'I love you,' Kate whispered.",
+    correct: true,
+    tags: [],
+    categories: [],
+    source: ""
+  },
+    {
+    text: "'I love you,' whispered she.",
+    correct: false,
+    tags: [],
+    categories: ["clause"],
+    source: ""
+  },
+    {
+    text: "'I love you,' she whispered.",
+    correct: true,
+    tags: [],
+    categories: [],
     source: ""
   },
   {
     text: "I believe them to be the most qualified candidates.",
     correct: true,
     tags: ["formal"],
-    categories: ["verbs"],
+    categories: [],
+    source: ""
+  },
+  {
+    text: "Small dogs bark the most.",
+    correct: true,
+    tags: [],
+    categories: [],
+    source: ""
+  },
+  {
+    text: "Small dogs bark most.",
+    correct: true,
+    tags: ["informal"],
+    categories: [],
     source: ""
   },
   {
     text: "Many a lies were told.",
     correct: false,
     tags: [],
-    categories: [],
+    categories: ["agreement"],
     source: ""
   },
   {
     text: "Many a lie were told.",
     correct: false,
     tags: [],
-    categories: [],
+    categories: ["agreement"],
     source: ""
   },
   {
     text: "Many a lies was told.",
     correct: false,
     tags: [],
-    categories: [],
+    categories: ["agreement"],
     source: ""
   },
   {
     text: "Many a lie was told.",
     correct: true,
     tags: ["formal"],
-    categories: ["subject-verb agreement"],
+    categories: [],
     source: ""
   },
   {
     text: "I find that they passed the test surprising.",
     correct: false,
     tags: [],
-    categories: [],
+    categories: ["clause"],
     source: ""
   },
   {
@@ -220,21 +283,21 @@ const sentences = [
     text: "Go and get your jacket.",
     correct: true,
     tags: [],
-    categories: ["verbs"],
+    categories: [],
     source: ""
   },
   {
     text: "Go get your jacket.",
     correct: true,
     tags: ["american", "informal"],
-    categories: ["verbs"],
+    categories: [],
     source: ""
   },
   {
     text: "There remains a sense of mystery surrounding the case.",
     correct: true,
     tags: ["formal", "literary"],
-    categories: ["clause"],
+    categories: [],
     source: ""
   },
 ];
