@@ -238,6 +238,34 @@ const sentences = [
     source: ""
   },
   {
+    text: "You ought to apologize, oughn't you to?",
+    correct: false,
+    tags: [],
+    categories: [],
+    source: ""
+  },
+  {
+    text: "You ought to apologize, oughn't you?",
+    correct: true,
+    tags: [],
+    categories: [],
+    source: ""
+  },
+  {
+    text: "If I knew the answer, I'd tell you.",
+    correct: true,
+    tags: [],
+    categories: [],
+    source: ""
+  },
+  {
+    text: "If I were to know the answer, I'd tell you.",
+    correct: false,
+    tags: [],
+    categories: [],
+    source: ""
+  },
+  {
     text: "Many a lies were told.",
     correct: false,
     tags: [],
