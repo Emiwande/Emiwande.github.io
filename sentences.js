@@ -518,3 +518,15 @@ const sentences = [
     source: ""
   },
 ];
+// There's no point in worrying ok
+// It's no point in worrying
+// There's no point worrying ok
+// It's no point worrying
+// There's no use in worrying ok
+// It's no use in worrying
+// There's no use worrying ok
+// It's no use worrying ok
+// There's no good in worrying
+// It's no good in worrying
+// There's no good worrying
+// It's no good worrying ok
