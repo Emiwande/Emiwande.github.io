@@ -72,8 +72,8 @@ const sentences = [
   {
     text: "The teacher demanded that we be quiet.",
     correct: true,
-    tags: [],
-    categories: ["American", "formal"],
+    tags: ["American", "formal"],
+    categories: [],
     source: ""
   },
   {
@@ -114,14 +114,14 @@ const sentences = [
   {
     text: "We hike at the weekends.",
     correct: true,
-    tags: ["British"],
+    tags: ["british"],
     categories: [],
     source: ""
   },
   {
     text: "We hike on the weekends.",
     correct: true,
-    tags: ["American"],
+    tags: ["american"],
     categories: [],
     source: ""
   },
