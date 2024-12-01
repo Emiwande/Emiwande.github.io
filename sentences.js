@@ -14,6 +14,13 @@ const sentences = [
     source: ""
   },
   {
+    text: "They could escape from prison yesterday.",
+    correct: false,
+    tags: [],
+    categories: ["modals"],
+    source: ""
+  },
+  {
     text: "Was late.",
     correct: false,
     tags: [],
@@ -318,6 +325,27 @@ const sentences = [
     text: "I believe them to be the most qualified candidates.",
     correct: true,
     tags: ["formal"],
+    categories: [],
+    source: ""
+  },
+  {
+    text: "Look at her dancing.",
+    correct: true,
+    tags: [],
+    categories: [],
+    source: ""
+  },
+  {
+    text: "Look at her dance.",
+    correct: true,
+    tags: ["American"],
+    categories: ["verbs"],
+    source: ""
+  },
+  {
+    text: "I don't hope so.",
+    correct: false,
+    tags: [],
     categories: [],
     source: ""
   },
