@@ -114,14 +114,14 @@ const sentences = [
   {
     text: "We hike at the weekends.",
     correct: true,
-    tags: ["british"],
+    tags: ["British"],
     categories: [],
     source: ""
   },
   {
     text: "We hike on the weekends.",
     correct: true,
-    tags: ["american"],
+    tags: ["American"],
     categories: [],
     source: ""
   },
@@ -366,7 +366,7 @@ const sentences = [
   {
     text: "Go get your jacket.",
     correct: true,
-    tags: ["american", "informal"],
+    tags: ["American", "informal"],
     categories: [],
     source: ""
   },
