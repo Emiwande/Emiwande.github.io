@@ -7,7 +7,7 @@ const sentences = [
     source: ""
   },
   {
-    text: "Whether I'll go to the part I don't know.",
+    text: "Whether I'll go to the party I don't know.",
     correct: true,
     tags: [],
     categories: [],
@@ -511,22 +511,87 @@ const sentences = [
     source: ""
   },
   {
-    text: "There remains a sense of mystery surrounding the case.",
+    text: "There's no point in worrying.",
     correct: true,
-    tags: ["formal", "literary"],
+    tags: [],
+    categories: [],
+    source: ""
+  },
+  {
+    text: "It's no point in worrying.",
+    correct: false,
+    tags: [],
+    categories: [],
+    source: ""
+  },
+  {
+    text: "There's no point worrying.",
+    correct: true,
+    tags: [],
+    categories: [],
+    source: ""
+  },
+  {
+    text: "It's no point worrying.",
+    correct: false,
+    tags: [],
+    categories: [],
+    source: ""
+  },
+  {
+    text: "There's no use in worrying.",
+    correct: true,
+    tags: [],
+    categories: [],
+    source: ""
+  },
+  {
+    text: "It's no use in worrying.",
+    correct: false,
+    tags: [],
+    categories: [],
+    source: ""
+  },
+  {
+    text: "There's no use worrying.",
+    correct: true,
+    tags: [],
+    categories: [],
+    source: ""
+  },
+  {
+    text: "It's no use worrying.",
+    correct: true,
+    tags: [],
+    categories: [],
+    source: ""
+  },
+  {
+    text: "There's no good in worrying.",
+    correct: false,
+    tags: [],
+    categories: [],
+    source: ""
+  },
+  {
+    text: "It's no good in worrying.",
+    correct: false,
+    tags: [],
+    categories: [],
+    source: ""
+  },
+  {
+    text: "There's no good worrying.",
+    correct: false,
+    tags: [],
+    categories: [],
+    source: ""
+  },
+  {
+    text: "It's no good worrying.",
+    correct: true,
+    tags: [],
     categories: [],
     source: ""
   },
 ];
-// There's no point in worrying ok
-// It's no point in worrying
-// There's no point worrying ok
-// It's no point worrying
-// There's no use in worrying ok
-// It's no use in worrying
-// There's no use worrying ok
-// It's no use worrying ok
-// There's no good in worrying
-// It's no good in worrying
-// There's no good worrying
-// It's no good worrying ok
