@@ -1,597 +1,207 @@
-const sentences = [
-  {
-    text: "Neither of the books is interesting.",
-    correct: true,
-    tags: ["formal"],
-    categories: [],
-    source: ""
-  },
-  {
-    text: "Whether I'll go to the party I don't know.",
-    correct: true,
-    tags: [],
-    categories: [],
-    source: ""
-  },
-  {
-    text: "If I'll go to the part I don't know.",
-    correct: false,
-    tags: [],
-    categories: [],
-    source: ""
-  },
-  {
-    text: "We had a conversation about whether the project was feasible.",
-    correct: true,
-    tags: [],
-    categories: [],
-    source: ""
-  },
-  {
-    text: "We had a conversation about if the project was feasible.",
-    correct: false,
-    tags: [],
-    categories: [],
-    source: ""
-  },
-  {
-    text: "Do you can juggle?",
-    correct: false,
-    tags: [],
-    categories: ["modals"],
-    source: ""
-  },
-  {
-    text: "I visited the Pentagon.",
-    correct: true,
-    tags: [],
-    categories: [],
-    source: ""
-  },
-  {
-    text: "I visited Pentagon.",
-    correct: false,
-    tags: [],
-    categories: ["articles"],
-    source: ""
-  },
-  {
-    text: "My world has always been cold, dark, silent.",
-    correct: true,
-    tags: ["literary"],
-    categories: [],
-    source: ""
-  },
-  {
-    text: "Was late.",
-    correct: false,
-    tags: [],
-    categories: ["clause"],
-    source: ""
-  },
-  {
-    text: "It was late.",
-    correct: true,
-    tags: [],
-    categories: [],
-    source: ""
-  },
-  {
-    text: "It was a mere suggestion.",
-    correct: true,
-    tags: [],
-    categories: [],
-    source: ""
-  },
-  {
-    text: "Neither of the books are interesting.",
-    correct: true,
-    tags: ["informal"],
-    categories: [],
-    source: ""
-  },
-  {
-    text: "It's time to make a decision",
-    correct: true,
-    tags: [],
-    categories: [],
-    source: ""
-  },
-  {
-    text: "It's time for you to make a decision",
-    correct: true,
-    tags: [],
-    categories: [],
-    source: ""
-  },
-  {
-    text: "It's time you made a decision.",
-    correct: true,
-    tags: [],
-    categories: [],
-    source: ""
-  },
-  {
-    text: "It's time you make a decision.",
-    correct: false,
-    tags: [],
-    categories: [],
-    source: ""
-  },
-  {
-    text: "He's knowing the answer.",
-    correct: false,
-    tags: [],
-    categories: ["tenses"],
-    source: ""
-  },
-  {
-    text: "He knows the answer.",
-    correct: true,
-    tags: [],
-    categories: [],
-    source: ""
-  },
-  {
-    text: "It rained all day, which ruined our plans.",
-    correct: true,
-    tags: [],
-    categories: [],
-    source: ""
-  },
-  {
-    text: "The teacher demanded that we be quiet.",
-    correct: true,
-    tags: ["American", "formal"],
-    categories: [],
-    source: ""
-  },
-  {
-    text: "It rained all day, what ruined our plans.",
-    correct: false,
-    tags: [],
-    categories: ["relative clauses"],
-    source: ""
-  },
-  {
-    text: "Can you juggle?",
-    correct: true,
-    tags: [],
-    categories: [],
-    source: ""
-  },
-  {
-    text: "I sneezed my nose.",
-    correct: false,
-    tags: [],
-    categories: ["verbs"],
-    source: ""
-  },
-  {
-    text: "They could escape from prison yesterday.",
-    correct: false,
-    tags: [],
-    categories: ["modals"],
-    source: ""
-  },
-  {
-    text: "I sneezed.",
-    correct: true,
-    tags: [],
-    categories: [],
-    source: ""
-  },
-  {
-    text: "I don't need no help.",
-    correct: false,
-    tags: [],
-    categories: [],
-    source: ""
-  },
-  {
-    text: "I don't need any help.",
-    correct: true,
-    tags: [],
-    categories: [],
-    source: ""
-  },
-  {
-    text: "I don't need some help.",
-    correct: false,
-    tags: [],
-    categories: [],
-    source: ""
-  },
-  {
-    text: "I need no help.",
-    correct: true,
-    tags: [],
-    categories: [],
-    source: ""
-  },
-  {
-    text: "Did you went to the party?",
-    correct: false,
-    tags: [],
-    categories: ["tenses"],
-    source: ""
-  },
-  {
-    text: "Did you go to the party?",
-    correct: true,
-    tags: [],
-    categories: [],
-    source: ""
-  },
-  {
-    text: "My parents let me to stay up late",
-    correct: false,
-    tags: [],
-    categories: ["verbs"],
-    source: ""
-  },
-  {
-    text: "My parents let me stay up late",
-    correct: true,
-    tags: [],
-    categories: ["verbs"],
-    source: ""
-  },
-  {
-    text: "We hike in the weekends.",
-    correct: false,
-    tags: [],
-    categories: ["prepositons"],
-    source: ""
-  },
-  {
-    text: "We hike at the weekends.",
-    correct: true,
-    tags: ["British"],
-    categories: [],
-    source: ""
-  },
-  {
-    text: "We hike on the weekends.",
-    correct: true,
-    tags: ["American"],
-    categories: [],
-    source: ""
-  },
-  {
-    text: "If you spot any mistakes, let me know.",
-    correct: true,
-    tags: [],
-    categories: [],
-    source: ""
-  },
-  {
-    text: "If you spot some mistakes, let me know.",
-    correct: true,
-    tags: [],
-    categories: [],
-    source: ""
-  },
-  {
-    text: "I doubt.",
-    correct: false,
-    tags: [],
-    categories: ["verbs"],
-    source: ""
-  },
-  {
-    text: "I doubt it.",
-    correct: true,
-    tags: [],
-    categories: [],
-    source: ""
-  },
-  {
-    text: "I'd rather to eat out.",
-    correct: false,
-    tags: [],
-    categories: ["verbs"],
-    source: ""
-  },
-  {
-    text: "I'd rather eat out.",
-    correct: true,
-    tags: [],
-    categories: [],
-    source: ""
-  },
-  {
-    text: "I'm next, aren't I?",
-    correct: true,
-    tags: [],
-    categories: [],
-    source: ""
-  },
-  {
-    text: "None of the answers is correct.",
-    correct: true,
-    tags: ["formal"],
-    categories: [],
-    source: ""
-  },
-  {
-    text: "None of the answers are correct.",
-    correct: true,
-    tags: ["informal"],
-    categories: [],
-    source: ""
-  },
-  {
-    text: "I am next, am I not?",
-    correct: true,
-    tags: ["formal"],
-    categories: [],
-    source: ""
-  },
-  {
-    text: "I've lost my wallet yesterday.",
-    correct: false,
-    tags: [],
-    categories: ["tenses"],
-    source: ""
-  },
-  {
-    text: "I lost my wallet yesterday.",
-    correct: true,
-    tags: [],
-    categories: [],
-    source: ""
-  },
-  {
-    text: "I took an umbrella in case it will rain.",
-    correct: false,
-    tags: [],
-    categories: ["tenses"],
-    source: ""
-  },
-  {
-    text: "I took an umbrella in case it rains.",
-    correct: true,
-    tags: [],
-    categories: [],
-    source: ""
-  },
-  {
-    text: "I believe that they are the most qualified candidates.",
-    correct: true,
-    tags: [],
-    categories: [],
-    source: ""
-  },
-  {
-    text: "I believe they are the most qualified candidates.",
-    correct: true,
-    tags: [],
-    categories: [],
-    source: ""
-  },
-  {
-    text: "'I love you,' whispered Kate.",
-    correct: true,
-    tags: [],
-    categories: [],
-    source: ""
-  },
-  {
-    text: "'I love you,' Kate whispered.",
-    correct: true,
-    tags: [],
-    categories: [],
-    source: ""
-  },
+const questions = [
     {
-    text: "'I love you,' whispered she.",
-    correct: false,
-    tags: [],
-    categories: ["clause"],
-    source: ""
-  },
+        question: "What's the difference between these sentences?",
+        sentences: [
+            "Neither of the books is interesting.",
+            "Neither of the books are interesting."
+        ],
+        answers: [
+            "The first is more formal.",
+            "The second is more formal.",
+            "There's no difference.",
+            "The first is incorrect.",
+            "The second is incorrect."
+        ],
+        correct: 0,
+        categories: ["quantifiers", "agreement"],
+        source: ""
+    },
     {
-    text: "'I love you,' she whispered.",
-    correct: true,
-    tags: [],
-    categories: [],
-    source: ""
-  },
-  {
-    text: "I believe them to be the most qualified candidates.",
-    correct: true,
-    tags: ["formal"],
-    categories: [],
-    source: ""
-  },
-  {
-    text: "I don't hope so.",
-    correct: false,
-    tags: [],
-    categories: [],
-    source: ""
-  },
-  {
-    text: "Small dogs bark the most.",
-    correct: true,
-    tags: [],
-    categories: [],
-    source: ""
-  },
-  {
-    text: "Small dogs bark most.",
-    correct: true,
-    tags: ["informal"],
-    categories: [],
-    source: ""
-  },
-  {
-    text: "You ought to apologize, oughn't you to?",
-    correct: false,
-    tags: [],
-    categories: [],
-    source: ""
-  },
-  {
-    text: "You ought to apologize, oughn't you?",
-    correct: true,
-    tags: ["formal"],
-    categories: [],
-    source: ""
-  },
-  {
-    text: "If I knew the answer, I'd tell you.",
-    correct: true,
-    tags: [],
-    categories: [],
-    source: ""
-  },
-  {
-    text: "If I were to know the answer, I'd tell you.",
-    correct: false,
-    tags: [],
-    categories: [],
-    source: ""
-  },
-  {
-    text: "Many a lies were told.",
-    correct: false,
-    tags: [],
-    categories: ["agreement"],
-    source: ""
-  },
-  {
-    text: "Many a lie were told.",
-    correct: false,
-    tags: [],
-    categories: ["agreement"],
-    source: ""
-  },
-  {
-    text: "Many a lies was told.",
-    correct: false,
-    tags: [],
-    categories: ["agreement"],
-    source: ""
-  },
-  {
-    text: "Many a lie was told.",
-    correct: true,
-    tags: ["formal"],
-    categories: [],
-    source: ""
-  },
-  {
-    text: "I find that they passed the test surprising.",
-    correct: false,
-    tags: [],
-    categories: ["clause"],
-    source: ""
-  },
-  {
-    text: "I find it surprising that they passed the test.",
-    correct: true,
-    tags: [],
-    categories: [],
-    source: ""
-  },
-  {
-    text: "Go and get your jacket.",
-    correct: true,
-    tags: [],
-    categories: [],
-    source: ""
-  },
-  {
-    text: "Go get your jacket.",
-    correct: true,
-    tags: ["American", "informal"],
-    categories: [],
-    source: ""
-  },
-  {
-    text: "There's no point in worrying.",
-    correct: true,
-    tags: [],
-    categories: [],
-    source: ""
-  },
-  {
-    text: "It's no point in worrying.",
-    correct: false,
-    tags: [],
-    categories: [],
-    source: ""
-  },
-  {
-    text: "There's no point worrying.",
-    correct: true,
-    tags: [],
-    categories: [],
-    source: ""
-  },
-  {
-    text: "It's no point worrying.",
-    correct: false,
-    tags: [],
-    categories: [],
-    source: ""
-  },
-  {
-    text: "There's no use in worrying.",
-    correct: true,
-    tags: [],
-    categories: [],
-    source: ""
-  },
-  {
-    text: "It's no use in worrying.",
-    correct: false,
-    tags: [],
-    categories: [],
-    source: ""
-  },
-  {
-    text: "There's no use worrying.",
-    correct: true,
-    tags: [],
-    categories: [],
-    source: ""
-  },
-  {
-    text: "It's no use worrying.",
-    correct: true,
-    tags: [],
-    categories: [],
-    source: ""
-  },
-  {
-    text: "There's no good in worrying.",
-    correct: false,
-    tags: [],
-    categories: [],
-    source: ""
-  },
-  {
-    text: "It's no good in worrying.",
-    correct: false,
-    tags: [],
-    categories: [],
-    source: ""
-  },
-  {
-    text: "There's no good worrying.",
-    correct: false,
-    tags: [],
-    categories: [],
-    source: ""
-  },
-  {
-    text: "It's no good worrying.",
-    correct: true,
-    tags: [],
-    categories: [],
-    source: ""
-  },
+        question: "What's the difference between these sentences?",
+        sentences: [
+            "I took an umbrella in case it will rain.",
+            "I took an umbrella in case it rains."
+        ],
+        answers: [
+            "The first is more formal.",
+            "The second is more formal.",
+            "There's no difference.",
+            "The first is incorrect.",
+            "The second is incorrect."
+        ],
+        correct: 3,
+        categories: ["tenses"],
+        source: ""
+    },
 ];
+
+// Neither of the books is interesting.
+// true,
+// Whether I'll go to the party I don't know.
+// true,
+// If I'll go to the part I don't know.
+// false,
+// We had a conversation about whether the project was feasible.
+// true,
+// We had a conversation about if the project was feasible.
+// false,
+// Do you can juggle?
+// false,
+// I visited the Pentagon.
+// true,
+// I visited Pentagon.
+// false,
+// My world has always been cold, dark, silent.
+// true,
+// Was late.
+// false,
+// It was late.
+// true,
+// It was a mere suggestion.
+// true,
+// Neither of the books are interesting.
+// true,
+// It's time to make a decision
+// true,
+// It's time for you to make a decision
+// true,
+// It's time you made a decision.
+// true,
+// It's time you make a decision.
+// false,
+// He's knowing the answer.
+// false,
+// He knows the answer.
+// true,
+// It rained all day, which ruined our plans.
+// true,
+// The teacher demanded that we be quiet.
+// true,
+// It rained all day, what ruined our plans.
+// false,
+// Can you juggle?
+// true,
+// I sneezed my nose.
+// false,
+// They could escape from prison yesterday.
+// false,
+// I sneezed.
+// true,
+// I don't need no help.
+// false,
+// I don't need any help.
+// true,
+// I don't need some help.
+// false,
+// I need no help.
+// true,
+// Did you went to the party?
+// false,
+// Did you go to the party?
+// true,
+// My parents let me to stay up late
+// false,
+// My parents let me stay up late
+// true,
+// We hike in the weekends.
+// false,
+// We hike at the weekends.
+// true,
+// We hike on the weekends.
+// true,
+// If you spot any mistakes, let me know.
+// true,
+// If you spot some mistakes, let me know.
+// true,
+// I doubt.
+// false,
+// I doubt it.
+// true,
+// I'd rather to eat out.
+// false,
+// I'd rather eat out.
+// true,
+// I'm next, aren't I?
+// true,
+// None of the answers is correct.
+// true,
+// None of the answers are correct.
+// true,
+// I am next, am I not?
+// true,
+// I've lost my wallet yesterday.
+// false,
+// I lost my wallet yesterday.
+// true,
+// I took an umbrella in case it will rain.
+// false,
+// I took an umbrella in case it rains.
+// true,
+// I believe that they are the most qualified candidates.
+// true,
+// I believe they are the most qualified candidates.
+// true,
+// 'I love you,' whispered Kate.
+// true,
+// 'I love you,' Kate whispered.
+// true,
+// 'I love you,' whispered she.
+// false,
+// 'I love you,' she whispered.
+// true,
+// I believe them to be the most qualified candidates.
+// true,
+// I don't hope so.
+// false,
+// Small dogs bark the most.
+// true,
+// Small dogs bark most.
+// true,
+// You ought to apologize, oughn't you to?
+// false,
+// You ought to apologize, oughn't you?
+// true,
+// If I knew the answer, I'd tell you.
+// true,
+// If I were to know the answer, I'd tell you.
+// false,
+// Many a lies were told.
+// false,
+// Many a lie were told.
+// false,
+// Many a lies was told.
+// false,
+// Many a lie was told.
+// true,
+// I find that they passed the test surprising.
+// false,
+// I find it surprising that they passed the test.
+// true,
+// Go and get your jacket.
+// true,
+// Go get your jacket.
+// true,
+// There's no point in worrying.
+// true,
+// It's no point in worrying.
+// false,
+// There's no point worrying.
+// true,
+// It's no point worrying.
+// false,
+// There's no use in worrying.
+// true,
+// It's no use in worrying.
+// false,
+// There's no use worrying.
+// true,
+// It's no use worrying.
+// true,
+// There's no good in worrying.
+// false,
+// It's no good in worrying.
+// false,
+// There's no good worrying.
+// false,
+// It's no good worrying.
+// true,
