@@ -7,7 +7,7 @@ const questions = [
         ],
         answers: [
             "There's no difference.",
-            "The first in incorrect.",
+            "The first is incorrect.",
             "The second is incorrect.",
             "The first is more formal.",
             "The second is more formal."
@@ -24,7 +24,7 @@ const questions = [
         ],
         answers: [
             "There's no difference.",
-            "The first in incorrect.",
+            "The first is incorrect.",
             "The second is incorrect.",
             "The first is more formal.",
             "The second is more formal."
@@ -41,7 +41,7 @@ const questions = [
         ],
         answers: [
             "There's no difference.",
-            "The first in incorrect.",
+            "The first is incorrect.",
             "The second is incorrect.",
             "The first is more formal.",
             "The second is more formal."
@@ -58,7 +58,7 @@ const questions = [
         ],
         answers: [
             "There's no difference.",
-            "The first in incorrect.",
+            "The first is incorrect.",
             "The second is incorrect.",
             "The first is more formal.",
             "The second is more formal."
@@ -75,7 +75,7 @@ const questions = [
         ],
         answers: [
             "There's no difference.",
-            "The first in incorrect.",
+            "The first is incorrect.",
             "The second is incorrect.",
             "The first is more formal.",
             "The second is more formal."
@@ -92,7 +92,7 @@ const questions = [
         ],
         answers: [
             "There's no difference.",
-            "The first in incorrect.",
+            "The first is incorrect.",
             "The second is incorrect.",
             "The first is more formal.",
             "The second is more formal."
