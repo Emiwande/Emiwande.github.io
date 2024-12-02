@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English Grammar Test</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <h1>English Grammar Test</h1>
+        <div id="instructions">
+            <p>Welcome to the English Grammar Test. You'll be presented with a series of questions. Select the correct answer for each question.</p>
+            <button id="startButton">Start</button>
+        </div>
+        <div id="quiz" class="hidden">
+            <div id="questionContainer"></div>
+            <button id="nextButton" class="hidden">Next</button>
+        </div>
+        <div id="results" class="hidden"></div>
+    </div>
+    <script src="questions.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
