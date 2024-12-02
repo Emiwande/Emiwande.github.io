@@ -436,7 +436,7 @@ const sentences = [
   {
     text: "You ought to apologize, oughn't you?",
     correct: true,
-    tags: [],
+    tags: ["formal"],
     categories: [],
     source: ""
   },
