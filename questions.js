@@ -2,17 +2,60 @@ const questions = [
     {
         question: "What's the difference between these sentences?",
         sentences: [
+            "I left the door open.",
+            "I left the open door."
+        ],
+        answers: [
+            "There is no difference.",
+            "There is a difference in meaning.",
+            "The first is incorrect.",
+            "The second is incorrect.",
+            "The first is more formal.",
+            "The second is more formal.",
+            "The first is more literary.",
+            "The second is more literary."
+        ],
+        correct: 1,
+        categories: ["verbs"],
+        source: ""
+    },
+    {
+        question: "What's the difference between these sentences?",
+        sentences: [
+            "My world has always been cold, dark, silent.",
+            "My world has always been cold, dark, and silent."
+        ],
+        answers: [
+            "There is no difference.",
+            "There is a difference in meaning.",
+            "The first is incorrect.",
+            "The second is incorrect.",
+            "The first is more formal.",
+            "The second is more formal.",
+            "The first is more literary.",
+            "The second is more literary."
+        ],
+        correct: 6,
+        categories: ["verbs"],
+        source: ""
+    },
+    {
+        question: "What's the difference between these sentences?",
+        sentences: [
             "Neither of the books is interesting.",
             "Neither of the books are interesting."
         ],
         answers: [
-            "There's no difference.",
+            "There is no difference.",
+            "There is a difference in meaning.",
             "The first is incorrect.",
             "The second is incorrect.",
             "The first is more formal.",
-            "The second is more formal."
+            "The second is more formal.",
+            "The first is more literary.",
+            "The second is more literary."
         ],
-        correct: 3,
+        correct: 4,
         categories: ["quantifiers", "agreement"],
         source: ""
     },
@@ -23,13 +66,16 @@ const questions = [
             "I took an umbrella in case it rains."
         ],
         answers: [
-            "There's no difference.",
+            "There is no difference.",
+            "There is a difference in meaning.",
             "The first is incorrect.",
             "The second is incorrect.",
             "The first is more formal.",
-            "The second is more formal."
+            "The second is more formal.",
+            "The first is more literary.",
+            "The second is more literary."
         ],
-        correct: 1,
+        correct: 3,
         categories: ["tenses"],
         source: ""
     },
@@ -40,13 +86,16 @@ const questions = [
             "That suggestion was mere."
         ],
         answers: [
-            "There's no difference.",
+            "There is no difference.",
+            "There is a difference in meaning.",
             "The first is incorrect.",
             "The second is incorrect.",
             "The first is more formal.",
-            "The second is more formal."
+            "The second is more formal.",
+            "The first is more literary.",
+            "The second is more literary."
         ],
-        correct: 2,
+        correct: 3,
         categories: ["adjectives"],
         source: ""
     },
@@ -57,13 +106,16 @@ const questions = [
             "I doubt it."
         ],
         answers: [
-            "There's no difference.",
+            "There is no difference.",
+            "There is a difference in meaning.",
             "The first is incorrect.",
             "The second is incorrect.",
             "The first is more formal.",
-            "The second is more formal."
+            "The second is more formal.",
+            "The first is more literary.",
+            "The second is more literary."
         ],
-        correct: 1,
+        correct: 2,
         categories: ["verbs"],
         source: ""
     },
@@ -74,13 +126,16 @@ const questions = [
             "None of the answers are correct."
         ],
         answers: [
-            "There's no difference.",
+            "There is no difference.",
+            "There is a difference in meaning.",
             "The first is incorrect.",
             "The second is incorrect.",
             "The first is more formal.",
-            "The second is more formal."
+            "The second is more formal.",
+            "The first is more literary.",
+            "The second is more literary."
         ],
-        correct: 3,
+        correct: 4,
         categories: ["quantifiers", "agreement"],
         source: ""
     },
@@ -91,13 +146,16 @@ const questions = [
             "It rained all day, what ruined our plans."
         ],
         answers: [
-            "There's no difference.",
+            "There is no difference.",
+            "There is a difference in meaning.",
             "The first is incorrect.",
             "The second is incorrect.",
             "The first is more formal.",
-            "The second is more formal."
+            "The second is more formal.",
+            "The first is more literary.",
+            "The second is more literary."
         ],
-        correct: 2,
+        correct: 3,
         categories: ["relative clauses"],
         source: ""
     },
@@ -120,8 +178,6 @@ const questions = [
 // true,
 // I visited Pentagon.
 // false,
-// My world has always been cold, dark, silent.
-// true,
 // Was late.
 // false,
 // It was late.
