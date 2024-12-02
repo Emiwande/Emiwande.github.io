@@ -36,7 +36,7 @@ const questions = [
             "The second is more literary."
         ],
         correct: 6,
-        categories: ["verbs"],
+        categories: [],
         source: ""
     },
     {
@@ -75,7 +75,7 @@ const questions = [
             "The first is more literary.",
             "The second is more literary."
         ],
-        correct: 3,
+        correct: 2,
         categories: ["tenses"],
         source: ""
     },
