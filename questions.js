@@ -179,8 +179,112 @@ const questions = [
         categories: ["articles"],
         source: ""
     },
+    {
+        question: "What's the difference between these sentences?",
+        sentences: [
+            "It's time you made a decision.",
+            "It's time you make a decision."
+        ],
+        answers: [
+            "There is no difference.",
+            "There is a difference in meaning.",
+            "The first is incorrect.",
+            "The second is incorrect.",
+            "The first is more formal.",
+            "The second is more formal.",
+            "The first is more literary.",
+            "The second is more literary."
+        ],
+        correct: 3,
+        categories: ["tenses"],
+        source: ""
+    },
+    {
+        question: "What's the difference between these sentences?",
+        sentences: [
+            "Do you can juggle?",
+            "Can you juggle?"
+        ],
+        answers: [
+            "There is no difference.",
+            "There is a difference in meaning.",
+            "The first is incorrect.",
+            "The second is incorrect.",
+            "The first is more formal.",
+            "The second is more formal.",
+            "The first is more literary.",
+            "The second is more literary."
+        ],
+        correct: 2,
+        categories: ["modals"],
+        source: ""
+    },
+    {
+        question: "What's the difference between these sentences?",
+        sentences: [
+            "He's knowing the answer.",
+            "He knows the answer."
+        ],
+        answers: [
+            "There is no difference.",
+            "There is a difference in meaning.",
+            "The first is incorrect.",
+            "The second is incorrect.",
+            "The first is more formal.",
+            "The second is more formal.",
+            "The first is more literary.",
+            "The second is more literary."
+        ],
+        correct: 2,
+        categories: ["tenses"],
+        source: ""
+    },
+    {
+        question: "What's the difference between these sentences?",
+        sentences: [
+            "Did you went to the party?",
+            "Did you go to the party?"
+        ],
+        answers: [
+            "There is no difference.",
+            "There is a difference in meaning.",
+            "The first is incorrect.",
+            "The second is incorrect.",
+            "The first is more formal.",
+            "The second is more formal.",
+            "The first is more literary.",
+            "The second is more literary."
+        ],
+        correct: 2,
+        categories: ["tenses"],
+        source: ""
+    },
+    {
+        question: "What's the difference between these sentences?",
+        sentences: [
+            "You ought to apologize, oughn't you to?",
+            "You ought to apologize, oughn't you?"
+        ],
+        answers: [
+            "There is no difference.",
+            "There is a difference in meaning.",
+            "The first is incorrect.",
+            "The second is incorrect.",
+            "The first is more formal.",
+            "The second is more formal.",
+            "The first is more literary.",
+            "The second is more literary."
+        ],
+        correct: 2,
+        categories: ["modals"],
+        source: ""
+    },
 ];
 
+// Small dogs bark the most.
+// true,
+// Small dogs bark most.
+// true,
 // The teacher demanded that we be quiet.
 // true,
 // Whether I'll go to the party I don't know.
@@ -191,9 +295,6 @@ const questions = [
 // true,
 // We had a conversation about if the project was feasible.
 // false,
-// Do you can juggle?
-// false,
-
 // Was late.
 // false,
 // It was late.
@@ -201,16 +302,6 @@ const questions = [
 // It's time to make a decision
 // true,
 // It's time for you to make a decision
-// true,
-// It's time you made a decision.
-// true,
-// It's time you make a decision.
-// false,
-// He's knowing the answer.
-// false,
-// He knows the answer.
-// true,
-// Can you juggle?
 // true,
 // I sneezed my nose.
 // false,
@@ -225,10 +316,6 @@ const questions = [
 // I don't need some help.
 // false,
 // I need no help.
-// true,
-// Did you went to the party?
-// false,
-// Did you go to the party?
 // true,
 // My parents let me to stay up late
 // false,
@@ -272,14 +359,6 @@ const questions = [
 // true,
 // I don't hope so.
 // false,
-// Small dogs bark the most.
-// true,
-// Small dogs bark most.
-// true,
-// You ought to apologize, oughn't you to?
-// false,
-// You ought to apologize, oughn't you?
-// true,
 // If I knew the answer, I'd tell you.
 // true,
 // If I were to know the answer, I'd tell you.
