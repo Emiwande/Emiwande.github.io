@@ -6,13 +6,13 @@ const questions = [
             "Neither of the books are interesting."
         ],
         answers: [
-            "The first is more formal.",
-            "The second is more formal.",
             "There's no difference.",
-            "The first is incorrect.",
-            "The second is incorrect."
+            "The first in incorrect.",
+            "The second is incorrect.",
+            "The first is more formal.",
+            "The second is more formal."
         ],
-        correct: 0,
+        correct: 3,
         categories: ["quantifiers", "agreement"],
         source: ""
     },
@@ -23,19 +23,88 @@ const questions = [
             "I took an umbrella in case it rains."
         ],
         answers: [
-            "The first is more formal.",
-            "The second is more formal.",
             "There's no difference.",
-            "The first is incorrect.",
-            "The second is incorrect."
+            "The first in incorrect.",
+            "The second is incorrect.",
+            "The first is more formal.",
+            "The second is more formal."
+        ],
+        correct: 1,
+        categories: ["tenses"],
+        source: ""
+    },
+    {
+        question: "What's the difference between these sentences?",
+        sentences: [
+            "It was a mere suggestion.",
+            "That suggestion was mere."
+        ],
+        answers: [
+            "There's no difference.",
+            "The first in incorrect.",
+            "The second is incorrect.",
+            "The first is more formal.",
+            "The second is more formal."
+        ],
+        correct: 2,
+        categories: ["adjectives"],
+        source: ""
+    },
+    {
+        question: "What's the difference between these sentences?",
+        sentences: [
+            "I doubt.",
+            "I doubt it."
+        ],
+        answers: [
+            "There's no difference.",
+            "The first in incorrect.",
+            "The second is incorrect.",
+            "The first is more formal.",
+            "The second is more formal."
+        ],
+        correct: 1,
+        categories: ["verbs"],
+        source: ""
+    },
+    {
+        question: "What's the difference between these sentences?",
+        sentences: [
+            "None of the answers is correct.",
+            "None of the answers are correct."
+        ],
+        answers: [
+            "There's no difference.",
+            "The first in incorrect.",
+            "The second is incorrect.",
+            "The first is more formal.",
+            "The second is more formal."
         ],
         correct: 3,
-        categories: ["tenses"],
+        categories: ["quantifiers", "agreement"],
+        source: ""
+    },
+    {
+        question: "What's the difference between these sentences?",
+        sentences: [
+            "It rained all day, which ruined our plans.",
+            "It rained all day, what ruined our plans."
+        ],
+        answers: [
+            "There's no difference.",
+            "The first in incorrect.",
+            "The second is incorrect.",
+            "The first is more formal.",
+            "The second is more formal."
+        ],
+        correct: 2,
+        categories: ["relative clauses"],
         source: ""
     },
 ];
 
-// Neither of the books is interesting.
+
+// The teacher demanded that we be quiet.
 // true,
 // Whether I'll go to the party I don't know.
 // true,
@@ -57,10 +126,6 @@ const questions = [
 // false,
 // It was late.
 // true,
-// It was a mere suggestion.
-// true,
-// Neither of the books are interesting.
-// true,
 // It's time to make a decision
 // true,
 // It's time for you to make a decision
@@ -73,12 +138,6 @@ const questions = [
 // false,
 // He knows the answer.
 // true,
-// It rained all day, which ruined our plans.
-// true,
-// The teacher demanded that we be quiet.
-// true,
-// It rained all day, what ruined our plans.
-// false,
 // Can you juggle?
 // true,
 // I sneezed my nose.
@@ -113,19 +172,11 @@ const questions = [
 // true,
 // If you spot some mistakes, let me know.
 // true,
-// I doubt.
-// false,
-// I doubt it.
-// true,
 // I'd rather to eat out.
 // false,
 // I'd rather eat out.
 // true,
 // I'm next, aren't I?
-// true,
-// None of the answers is correct.
-// true,
-// None of the answers are correct.
 // true,
 // I am next, am I not?
 // true,
