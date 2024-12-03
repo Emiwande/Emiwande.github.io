@@ -419,8 +419,9 @@ const questions = [
     },
 ];
 
+
 // Small dogs bark the most.
-// true,
+// true
 // Small dogs bark most.
 // true,
 // The teacher demanded that we be quiet.
