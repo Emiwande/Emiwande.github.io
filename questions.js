@@ -14,6 +14,8 @@ const questions = [
             "The second is more formal.",
             "The first is more literary.",
             "The second is more literary."
+            "The first is more British.",
+            "The second is more American."
         ],
         correct: 2,
         categories: ["tenses"],
@@ -34,6 +36,8 @@ const questions = [
             "The second is more formal.",
             "The first is more literary.",
             "The second is more literary."
+            "The first is more British.",
+            "The second is more American."
         ],
         correct: 1,
         categories: ["verbs"],
@@ -54,6 +58,8 @@ const questions = [
             "The second is more formal.",
             "The first is more literary.",
             "The second is more literary."
+            "The first is more British.",
+            "The second is more American."
         ],
         correct: 6,
         categories: [],
@@ -74,6 +80,8 @@ const questions = [
             "The second is more formal.",
             "The first is more literary.",
             "The second is more literary."
+            "The first is more British.",
+            "The second is more American."
         ],
         correct: 4,
         categories: ["quantifiers", "agreement"],
@@ -94,6 +102,8 @@ const questions = [
             "The second is more formal.",
             "The first is more literary.",
             "The second is more literary."
+            "The first is more British.",
+            "The second is more American."
         ],
         correct: 3,
         categories: ["adjectives"],
@@ -114,6 +124,8 @@ const questions = [
             "The second is more formal.",
             "The first is more literary.",
             "The second is more literary."
+            "The first is more British.",
+            "The second is more American."
         ],
         correct: 2,
         categories: ["verbs"],
@@ -134,6 +146,8 @@ const questions = [
             "The second is more formal.",
             "The first is more literary.",
             "The second is more literary."
+            "The first is more British.",
+            "The second is more American."
         ],
         correct: 4,
         categories: ["quantifiers", "agreement"],
@@ -154,6 +168,8 @@ const questions = [
             "The second is more formal.",
             "The first is more literary.",
             "The second is more literary."
+            "The first is more British.",
+            "The second is more American."
         ],
         correct: 3,
         categories: ["relative clauses"],
@@ -174,6 +190,8 @@ const questions = [
             "The second is more formal.",
             "The first is more literary.",
             "The second is more literary."
+            "The first is more British.",
+            "The second is more American."
         ],
         correct: 3,
         categories: ["articles"],
@@ -194,6 +212,8 @@ const questions = [
             "The second is more formal.",
             "The first is more literary.",
             "The second is more literary."
+            "The first is more British.",
+            "The second is more American."
         ],
         correct: 3,
         categories: ["tenses"],
@@ -214,6 +234,8 @@ const questions = [
             "The second is more formal.",
             "The first is more literary.",
             "The second is more literary."
+            "The first is more British.",
+            "The second is more American."
         ],
         correct: 2,
         categories: ["modals"],
@@ -234,6 +256,8 @@ const questions = [
             "The second is more formal.",
             "The first is more literary.",
             "The second is more literary."
+            "The first is more British.",
+            "The second is more American."
         ],
         correct: 2,
         categories: ["tenses"],
@@ -254,6 +278,8 @@ const questions = [
             "The second is more formal.",
             "The first is more literary.",
             "The second is more literary."
+            "The first is more British.",
+            "The second is more American."
         ],
         correct: 2,
         categories: ["tenses"],
@@ -274,9 +300,121 @@ const questions = [
             "The second is more formal.",
             "The first is more literary.",
             "The second is more literary."
+            "The first is more British.",
+            "The second is more American."
         ],
         correct: 2,
         categories: ["modals"],
+        source: ""
+    },
+    {
+        question: "What's the difference between these sentences?",
+        sentences: [
+            "I don't hope so.",
+            "I hope not."
+        ],
+        answers: [
+            "There is no difference.",
+            "There is a difference in meaning.",
+            "The first is incorrect.",
+            "The second is incorrect.",
+            "The first is more formal.",
+            "The second is more formal.",
+            "The first is more literary.",
+            "The second is more literary."
+            "The first is more British.",
+            "The second is more American."
+        ],
+        correct: 2,
+        categories: ["verbs"],
+        source: ""
+    },
+    {
+        question: "What's the difference between these sentences?",
+        sentences: [
+            "When have they been friends since?",
+            "Since when have they been friends?"
+        ],
+        answers: [
+            "There is no difference.",
+            "There is a difference in meaning.",
+            "The first is incorrect.",
+            "The second is incorrect.",
+            "The first is more formal.",
+            "The second is more formal.",
+            "The first is more literary.",
+            "The second is more literary."
+            "The first is more British.",
+            "The second is more American."
+        ],
+        correct: 2,
+        categories: ["prepositions"],
+        source: ""
+    },
+    {
+        question: "What's the difference between these sentences?",
+        sentences: [
+            "Everyone smile today.",
+            "Everyone smiles today."
+        ],
+        answers: [
+            "There is no difference.",
+            "There is a difference in meaning.",
+            "The first is incorrect.",
+            "The second is incorrect.",
+            "The first is more formal.",
+            "The second is more formal.",
+            "The first is more literary.",
+            "The second is more literary."
+            "The first is more British.",
+            "The second is more American."
+        ],
+        correct: 2,
+        categories: ["agreement"],
+        source: ""
+    },
+    {
+        question: "What's the difference between these sentences?",
+        sentences: [
+            "I sneezed my nose.",
+            "I sneezed."
+        ],
+        answers: [
+            "There is no difference.",
+            "There is a difference in meaning.",
+            "The first is incorrect.",
+            "The second is incorrect.",
+            "The first is more formal.",
+            "The second is more formal.",
+            "The first is more literary.",
+            "The second is more literary."
+            "The first is more British.",
+            "The second is more American."
+        ],
+        correct: 2,
+        categories: ["verbs"],
+        source: ""
+    },
+    {
+        question: "What's the difference between these sentences?",
+        sentences: [
+            "Many a lie were told.",
+            "Many a lie was told."
+        ],
+        answers: [
+            "There is no difference.",
+            "There is a difference in meaning.",
+            "The first is incorrect.",
+            "The second is incorrect.",
+            "The first is more formal.",
+            "The second is more formal.",
+            "The first is more literary.",
+            "The second is more literary."
+            "The first is more British.",
+            "The second is more American."
+        ],
+        correct: 2,
+        categories: ["agreement"],
         source: ""
     },
 ];
@@ -303,12 +441,8 @@ const questions = [
 // true,
 // It's time for you to make a decision
 // true,
-// I sneezed my nose.
-// false,
 // They could escape from prison yesterday.
 // false,
-// I sneezed.
-// true,
 // I don't need no help.
 // false,
 // I don't need any help.
@@ -357,20 +491,10 @@ const questions = [
 // true,
 // I believe them to be the most qualified candidates.
 // true,
-// I don't hope so.
-// false,
 // If I knew the answer, I'd tell you.
 // true,
 // If I were to know the answer, I'd tell you.
 // false,
-// Many a lies were told.
-// false,
-// Many a lie were told.
-// false,
-// Many a lies was told.
-// false,
-// Many a lie was told.
-// true,
 // I find that they passed the test surprising.
 // false,
 // I find it surprising that they passed the test.
