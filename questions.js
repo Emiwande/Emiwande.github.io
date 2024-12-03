@@ -13,7 +13,7 @@ const questions = [
             "The first is more formal.",
             "The second is more formal.",
             "The first is more literary.",
-            "The second is more literary."
+            "The second is more literary.",
             "The first is more British.",
             "The second is more American."
         ],
@@ -35,7 +35,7 @@ const questions = [
             "The first is more formal.",
             "The second is more formal.",
             "The first is more literary.",
-            "The second is more literary."
+            "The second is more literary.",
             "The first is more British.",
             "The second is more American."
         ],
@@ -57,7 +57,7 @@ const questions = [
             "The first is more formal.",
             "The second is more formal.",
             "The first is more literary.",
-            "The second is more literary."
+            "The second is more literary.",
             "The first is more British.",
             "The second is more American."
         ],
@@ -79,7 +79,7 @@ const questions = [
             "The first is more formal.",
             "The second is more formal.",
             "The first is more literary.",
-            "The second is more literary."
+            "The second is more literary.",
             "The first is more British.",
             "The second is more American."
         ],
@@ -101,7 +101,7 @@ const questions = [
             "The first is more formal.",
             "The second is more formal.",
             "The first is more literary.",
-            "The second is more literary."
+            "The second is more literary.",
             "The first is more British.",
             "The second is more American."
         ],
@@ -123,7 +123,7 @@ const questions = [
             "The first is more formal.",
             "The second is more formal.",
             "The first is more literary.",
-            "The second is more literary."
+            "The second is more literary.",
             "The first is more British.",
             "The second is more American."
         ],
@@ -145,7 +145,7 @@ const questions = [
             "The first is more formal.",
             "The second is more formal.",
             "The first is more literary.",
-            "The second is more literary."
+            "The second is more literary.",
             "The first is more British.",
             "The second is more American."
         ],
@@ -167,7 +167,7 @@ const questions = [
             "The first is more formal.",
             "The second is more formal.",
             "The first is more literary.",
-            "The second is more literary."
+            "The second is more literary.",
             "The first is more British.",
             "The second is more American."
         ],
@@ -189,7 +189,7 @@ const questions = [
             "The first is more formal.",
             "The second is more formal.",
             "The first is more literary.",
-            "The second is more literary."
+            "The second is more literary.",
             "The first is more British.",
             "The second is more American."
         ],
@@ -211,7 +211,7 @@ const questions = [
             "The first is more formal.",
             "The second is more formal.",
             "The first is more literary.",
-            "The second is more literary."
+            "The second is more literary.",
             "The first is more British.",
             "The second is more American."
         ],
@@ -233,7 +233,7 @@ const questions = [
             "The first is more formal.",
             "The second is more formal.",
             "The first is more literary.",
-            "The second is more literary."
+            "The second is more literary.",
             "The first is more British.",
             "The second is more American."
         ],
@@ -255,7 +255,7 @@ const questions = [
             "The first is more formal.",
             "The second is more formal.",
             "The first is more literary.",
-            "The second is more literary."
+            "The second is more literary.",
             "The first is more British.",
             "The second is more American."
         ],
@@ -277,7 +277,7 @@ const questions = [
             "The first is more formal.",
             "The second is more formal.",
             "The first is more literary.",
-            "The second is more literary."
+            "The second is more literary.",
             "The first is more British.",
             "The second is more American."
         ],
@@ -299,7 +299,7 @@ const questions = [
             "The first is more formal.",
             "The second is more formal.",
             "The first is more literary.",
-            "The second is more literary."
+            "The second is more literary.",
             "The first is more British.",
             "The second is more American."
         ],
@@ -321,7 +321,7 @@ const questions = [
             "The first is more formal.",
             "The second is more formal.",
             "The first is more literary.",
-            "The second is more literary."
+            "The second is more literary.",
             "The first is more British.",
             "The second is more American."
         ],
@@ -343,7 +343,7 @@ const questions = [
             "The first is more formal.",
             "The second is more formal.",
             "The first is more literary.",
-            "The second is more literary."
+            "The second is more literary.",
             "The first is more British.",
             "The second is more American."
         ],
@@ -365,7 +365,7 @@ const questions = [
             "The first is more formal.",
             "The second is more formal.",
             "The first is more literary.",
-            "The second is more literary."
+            "The second is more literary.",
             "The first is more British.",
             "The second is more American."
         ],
@@ -387,7 +387,7 @@ const questions = [
             "The first is more formal.",
             "The second is more formal.",
             "The first is more literary.",
-            "The second is more literary."
+            "The second is more literary.",
             "The first is more British.",
             "The second is more American."
         ],
@@ -409,7 +409,7 @@ const questions = [
             "The first is more formal.",
             "The second is more formal.",
             "The first is more literary.",
-            "The second is more literary."
+            "The second is more literary.",
             "The first is more British.",
             "The second is more American."
         ],
